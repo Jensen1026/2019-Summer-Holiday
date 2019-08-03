@@ -79,6 +79,7 @@
    * 示例：Map<Integer,String>map=mew HashMap<Integer,String>();
    * 常用函数
      * put(K,V);//将指定值与指定键相关联，如果此键以存在，将值替换
+     * get(Object);//返回指定键对应的值
      * putAll(Map);
      * clear();//删除Map所有键值对
      * remove(Object);//删除指定键值对
@@ -88,7 +89,7 @@
      * values();
      * entrySet();
      * containsKey(Object);//判断Map是否存在指定键
-     * containsValue(Object);//判断Map是否存在指定值
+     * containsValue(Value);//判断Map是否存在指定值
    * HsahMap(散列映射)
      * put();
      * equals();
