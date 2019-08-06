@@ -89,7 +89,7 @@
      * **KeySet();**//遍历键
      * values();//遍历值
      * entrySet();//遍历键值对
-     * **containsKey(Object);**//判断Map是否存在指定键
+     * **containsKey(Object);**//判断Map是否存在指定键，返回true或者false
      * containsValue(Value);//判断Map是否存在指定值
    * HsahMap(散列映射)
      * put();
