@@ -13,19 +13,19 @@
 
 深度神经网络的最新进展使得人工神经网络可以直接从原始传感数据中学习诸如对象类别之类的概念，其中使用若干层节点来逐渐建立数据的抽象表示。
 
-**卷积神经网络(Convolutional Neural Network,CNN)：**它使用层叠的平铺卷积滤波器层来模拟感受域的影响。
+**卷积神经网络(Convolutional Neural Network,CNN)**：它使用层叠的平铺卷积滤波器层来模拟感受域的影响。
 
 >卷积神经网络是一种前馈神经网络，它的人工神经元可以响应一部分覆盖范围内的周围单元，对于大型图像处理有出色表现。它包括卷积层(convolutional layer)和池化层(pooling layer)。
-卷积神经网络组成：输入层、卷积层、激活函数、池化层、全连接层
+>卷积神经网络组成：输入层、卷积层、激活函数、池化层、全连接层
 
 
 >**对比：全连接神经网络**
 ![](https://upload-images.jianshu.io/upload_images/4824974-0ad8a5321a879d8b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000)
-全连接神经网络组成：输入层、激活函数、全连接层(输入层、输出层、隐藏层)
-同一层的神经元之间没有连接
-每个连接都有一个权值
+>全连接神经网络组成：输入层、激活函数、全连接层(输入层、输出层、隐藏层)
+>同一层的神经元之间没有连接
+>每个连接都有一个权值
 ![](https://upload-images.jianshu.io/upload_images/4824974-5c61110c06202d8b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000)
-一个神经元组成为：
+>一个神经元组成为：
 **输入**：n维向量X
 **线性加权**：w是权值，b是偏置项
 ![](https://upload-images.jianshu.io/upload_images/4824974-eabb74fb1e86e0db.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/470)
