@@ -25,13 +25,14 @@
 >同一层的神经元之间没有连接  
 >每个连接都有一个权值  
 >![](https://upload-images.jianshu.io/upload_images/4824974-5c61110c06202d8b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000)  
->一个神经元组成为：
+>一个神经元组成为：  
 >**输入**：n维向量X  
-**线性加权**：w是权值，b是偏置项  
-![](https://upload-images.jianshu.io/upload_images/4824974-eabb74fb1e86e0db.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/470)  
-**激活函数**：H(x)，要求非线性，容易求导数  
-**输出**：a  
-神经网络的训练：(1)一个神经网络的每个连接上的权值；(2)神经网络就是一个模型，这些权值就是模型的参数（即模型要学习的东西）；(3)对于这个神经网络的连接方式、网络层数、每层的节点个数，这些是我们实现设置的，成为超参数。
+>**线性加权**：w是权值，b是偏置项  
+>![](https://upload-images.jianshu.io/upload_images/4824974-eabb74fb1e86e0db.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/470)  
+>**激活函数**：H(x)，要求非线性，容易求导数  
+>**输出**：a  
+>神经网络的训练：  (1)一个神经网络的每个连接上的权值；  
+(2)神经网络就是一个模型，这些权值就是模型的参数（即模型要学习的东西）；(3)对于这个神经网络的连接方式、网络层数、每层的节点个数，这些是我们实现设置的，成为超参数。
 
 
 
