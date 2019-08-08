@@ -15,7 +15,7 @@
 
 &emsp;&emsp;加载数据、预处理、模型拟合、预测。
 
-![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg?token=AJ5ZXU6AI5LPCQJGNJ2ZYCC5JN5QK)
+![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg?token=AJ5ZXU2MI7CPGGSRKRPJ6Y25JOCDI)
 
 ## 2. 监督学习
 
