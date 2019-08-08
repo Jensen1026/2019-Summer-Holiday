@@ -13,7 +13,7 @@
 
 &emsp;&emsp;核心是“使用算法解析数据，从中学习，然后对世界上的某件事情做出决定或预测”。这意味着，与其显式地编写程序来执行某些任务，不如教计算机如何开发一个算法来完成任务。有三种主要类型的机器学习：监督学习、非监督学习和强化学习(半监督学习)。
 
-![](https://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_png/53QBo8fgmuGU5egtzydcNibhfIIIJJU6hHnX6iaYRkEFibVUrgrJUWjRHNdHdHFticgiaN8tAkia0EicI89zs1NZOMJpg/640?wx_fmt=png)
+![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg?token=AJ5ZXU6AI5LPCQJGNJ2ZYCC5JN5QK)
 
 ## 2. 监督学习
 
