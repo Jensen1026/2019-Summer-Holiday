@@ -13,7 +13,7 @@
 
 &emsp;&emsp;核心是“使用算法解析数据，从中学习，然后对世界上的某件事情做出决定或预测”。这意味着，与其显式地编写程序来执行某些任务，不如教计算机如何开发一个算法来完成任务。有三种主要类型的机器学习：监督学习、非监督学习和强化学习(半监督学习)。
 
-![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg)
+![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/machine%20learning.jpg)
 
 ## 2. 监督学习
 
@@ -82,13 +82,13 @@
 >“全连接”是一种不错的连接方式，但是当网络很大时，训练速度很慢。部分连接解释认为的切断两个节点直接的连接，这样训练时计算量将会大大减小。
 
 1. 组成：输入层、激活函数、全连接层(输入层、输出层、隐藏层)
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E8%BE%93%E5%85%A5%E5%B1%82%E9%9A%90%E8%97%8F%E5%B1%82%E8%BE%93%E5%87%BA%E5%B1%82.jpg)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E8%BE%93%E5%85%A5%E5%B1%82%E9%9A%90%E8%97%8F%E5%B1%82%E8%BE%93%E5%87%BA%E5%B1%82.jpg)
 2. 同一层的神经元之间没有连接；每个连接都有一个权值
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E5%B1%82%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
 3. 一个神经元的组成为:
    * 输入：n维向量x
    * 线性加权：w是权值，b是偏置项
-     ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E5%8A%A0%E6%9D%83%E5%85%AC%E5%BC%8F.jpg)
+     ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E5%B1%82%E5%8A%A0%E6%9D%83%E5%85%AC%E5%BC%8F.jpg)
    * 激活函数：H(x)，要求非线性，容易求导数
    * 输出：a
 4. 神经网络的训练
@@ -127,7 +127,7 @@
    * **全连接层**：在经过多轮卷积层和池化层的处理之后，在卷积神经网络的最后一般会是由一到两个全连接层来给出最后的分类结果。
    * **softmax层**：softmax层主要用于解决分类问题，通过softmax层，可以得到当前样例属于不同种类的概率分布情况。
    * **激活函数**
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%84%E6%88%90.png)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%84%E6%88%90.png)
 2. 卷积层
    * 卷积层神经网络中最重要的部分被称为过滤器(filter)或者内核(kernel)。过滤器可以将当前层神经网络上的一个子节点矩阵转化为下一层神经网络上的一个**单位节点矩阵**。单位节点矩阵指的是一个长和宽都为1，但是深度不限的节点矩阵。
    * **过滤器所处理节点矩阵的长和宽是需要人工指定的**，这个节点矩阵的尺寸也被称为过滤器的尺寸。常用的过滤器尺寸有3\*3和5\*5。因为过滤器处理的矩阵深度和当前层神经网络节点矩阵的深度是一致的，所以虽然节点矩阵是三维的，但是过滤器的尺寸只需要指定两个维度。
@@ -137,7 +137,7 @@
    * 在卷积层之间往往会加上一个池化层，池化层可以非常有效的减少矩阵的尺寸（主要用于减少矩阵的长和宽，虽然也可以减少矩阵深度，但是实践中一般不会这样使用），从而有效减少最后全连接层中的参数。所以池化层可以既加快计算速度还可以防止过拟合。
    * 池化层滤器中的计算不是节点的加权和，而是采用更加简单的最大值或者平均值计算。使用最大值操作的池化层被称为最大池化层，使用平均值操作的池化层被称为平均池化层。
    * **池化层的过滤器也需要人工设置过滤器的尺寸，需要指定长和宽**。卷积层和池化层中过滤器的移动方式是相似的，唯一的区别在于卷积层使用的过滤器是横跨整个深度的，而池化层使用的过滤器只影响一个深度上的节点。所以池化层的过滤器除了在长和宽两个维度上移动之外，它还需要在深度这个维度上移动。
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E6%B1%A0%E5%8C%96%E5%B1%82.png)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E6%B1%A0%E5%8C%96%E5%B1%82.png)
 
 ## 13. 深度残差网络
 
