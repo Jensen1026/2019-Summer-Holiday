@@ -15,7 +15,7 @@
 
 &emsp;&emsp;加载数据、预处理、模型拟合、预测。
 
-![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg?token=AJ5ZXU2MI7CPGGSRKRPJ6Y25JOCDI)
+![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/machine%20learning.jpg)
 
 ## 2. 监督学习
 
@@ -82,13 +82,13 @@
 ## 12. 卷积神经网络
 
 1. 组成：输入层、激活函数、全连接层(输入层、输出层、隐藏层)
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E8%BE%93%E5%85%A5%E5%B1%82%E9%9A%90%E8%97%8F%E5%B1%82%E8%BE%93%E5%87%BA%E5%B1%82.jpg?token=AJ5ZXU6H74U37S75DQCPB7S5JN7S4)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E8%BE%93%E5%85%A5%E5%B1%82%E9%9A%90%E8%97%8F%E5%B1%82%E8%BE%93%E5%87%BA%E5%B1%82.jpg)
 2. 同一层的神经元之间没有连接；每个连接都有一个权值
-   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg?token=AJ5ZXU6H2RIWKPE52QLPNOK5JN74Q)
+   ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
 3. 一个神经元的组成为:
    * 输入：n维向量x
    * 线性加权：w是权值，b是偏置项
-     ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E5%8A%A0%E6%9D%83%E5%85%AC%E5%BC%8F.jpg?token=AJ5ZXU6IWYJ54RG5UJNRSHK5JOAUA)
+     ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/%E5%B1%82%E5%8A%A0%E6%9D%83%E5%85%AC%E5%BC%8F.jpg)
    * 激活函数：H(x)，要求非线性，容易求导数
    * 输出：a
 4. 神经网络的训练
