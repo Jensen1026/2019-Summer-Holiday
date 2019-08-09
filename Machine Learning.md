@@ -145,6 +145,7 @@
 ## 13. 深度残差网络(Deep Residual Network,DRN)
 
 >**[ResNet论文笔记](https://blog.csdn.net/wspba/article/details/56019373)**
+
 >**[解密ResNet：Identity Mappings in Deep Residual Networks论文笔记](https://blog.csdn.net/wspba/article/details/60572886)**
 
 **背景**：深度学习用到的网络随着网络层级的不断增加，模型精度不断得到提升，而当网络层级增加到一定的数目以后，训练精度和测试精度迅速下降，这说明当网络变得很深以后，深度网络就变得更加难以训练了。
