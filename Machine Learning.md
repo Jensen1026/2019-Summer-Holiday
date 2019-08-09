@@ -144,38 +144,26 @@
 
 ## 13. 深度残差网络(Deep Residual Network,DRN)
 
->[ResNet论文笔记](https://blog.csdn.net/wspba/article/details/56019373)
+>**[ResNet论文笔记](https://blog.csdn.net/wspba/article/details/56019373)**
+>**[解密ResNet：Identity Mappings in Deep Residual Networks论文笔记](https://blog.csdn.net/wspba/article/details/60572886)**
 
->[解密ResNet：Identity Mappings in Deep Residual Networks论文笔记](https://blog.csdn.net/wspba/article/details/60572886)
-
-**背景**：深度学习用到的网络随着网络层级的不断增加，模型精度不断得到提升，而当网络层级增加到一定的数目以后，训练精度和测试精度迅速下降，这说明当网络变得很深以后，深度网络就变得更加难以训练了。**原因**在于，神经网络在反向传播过程中要不断地传播梯度，而当网络层数加深时，梯度在传播过程中会逐渐消失，导致无法对前面网络层的权重进行有效的调整。
+**背景**：深度学习用到的网络随着网络层级的不断增加，模型精度不断得到提升，而当网络层级增加到一定的数目以后，训练精度和测试精度迅速下降，这说明当网络变得很深以后，深度网络就变得更加难以训练了。
+**原因**：神经网络在反向传播过程中要不断地传播梯度，而当网络层数加深时，梯度在传播过程中会逐渐消失，导致无法对前面网络层的权重进行有效的调整。
 ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%95%B0%E5%92%8C%E5%AD%A6%E4%B9%A0%E6%95%88%E6%9E%9C%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
 
 >**目标**：在加深网络层数的同时，解决梯度消失问题，又能提升模型精度
 
 >**引子**：假设现有一个比较浅的网络已达到了饱和的准确率，这时在它后面再加上几个恒等映射层就增加了网络的深度，并且起码误差不会增加，也即更深的网络不应该带来训练集上误差的上升。
 
-&emsp;残差网络的基本结构如下图所示：
+残差网络的基本结构如下图所示：
 ![](https://raw.githubusercontent.com/Jensen1026/Pictures/master/Mechine%20Learning/%E6%AE%8B%E5%B7%AE%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.jpg)
+
 &emsp;&emsp;假定某段神经网络的输入是x，期望输出是H(x)，即H(x)是期望的复杂潜在映射，如果是要学习这样的模型，则训练难度会比较大；根据前面的假设：如果已经学习到较饱和的准确率（或者当发现下层的误差变大时），那么接下来的学习目标就转变为恒等映射的学习，也就是使输入x近似于输出H(x)，以保持在后面的层次中不会造成精度下降。
+
 &emsp;&emsp;在上面结构图中，通过捷径连接的方式，直接把输入x传到输出作为初始结果，输出结果为H(x)=F(x)+x，当F(x)=0时，那么H(x)=x，也就是上面所提到的恒等映射。于是，ResNet相当于将学习目标改变了，不再是学习一个完整的输出，而是目标值H(X)和x的差值，也就是所谓的残差F(x)=H(x)-x，因此，后面的训练目标就是要将残差结果逼近于0，使到随着网络加深，准确率不下降。
+
 &emsp;&emsp;这种残差跳跃式的结构，打破了传统的神经网络n-1的输出只能给n层作为输入的惯例，使得某一层的输出可以直接跳过几层作为后面某一层的输入。
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
-&emsp;&emsp;
+
 &emsp;&emsp;其实深度残差网络就是把一串的训练，分成了一个个的block去训练，让每一个block的误差最小，最终达到整体误差最小的目的，所以就不会出现梯度弥散现象了。
 
 ## 14. 马尔可夫决策过程
