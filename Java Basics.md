@@ -86,6 +86,7 @@
      8. getFirst();
      9. getLast();
      10. **get();**
+     11. size();//求链表长度。**注意**：LinkedList中没有isEmpty()函数
 
 ### Set
 
