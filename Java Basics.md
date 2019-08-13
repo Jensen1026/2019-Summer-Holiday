@@ -120,16 +120,3 @@
      1. put();
      2. equals();
      3. hashCode();
-
-1. **put(K,V);**//将指定键与指定值相关联，如果此键以存在，将值替换
-2. **get(Object);**//返回指定键对应的值
-3. putAll(Map);
-4. clear();//删除Map所有键值对
-     1. remove(Object);//删除指定键值对
-     2. **size();**//返回键值对个数
-     3. isEmpty();//判断Map是否为空
-     4. **KeySet();**//获取所有的键，遍历键
-     5. values();//获取所有的value值，遍历值
-     6.  entrySet();//遍历键值对
-     7.  **containsKey(Object);**//判断Map是否存在指定键，返回true或者false
-     8.  containsValue(Value);//判断Map是否存在指定值
